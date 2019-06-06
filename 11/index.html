@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+   <div class="big">
+   		<div class="help">
+   			<div class="bor">
+   				<div class="bor1">
+   					50:50
+   				</div>
+   				<div class="bor1">
+   					Зал
+   				</div>
+   				<div class="bor1">
+   					Звонок Другу
+   				</div>
+   			</div>
+
+   		</div>
+
+   		<div class="quet">
+   			<div class="brot1">
+   				
+   			</div>
+   			<div class="brot">
+   				
+   			</div>
+   		</div>
+   </div>
+	<div class="small">
+   	
+   </div>
+   <div class="block-one">   	
+   	<div class="med">
+   			<h2>
+   					Кто создал Apple prodc.?
+   			</h2>
+	</div>
+		<div class="flex">	
+			<div class="answer">
+				<div>
+					<button class="lol">
+							A) Стив Джобс
+						</button>
+				</div>
+				<div>
+						<button class="lol2">
+							B) Владимир Путин
+						</button>
+				</div>
+			</div>
+			<div class="answer">
+				<div>
+						<button class="lol2">
+							C) Дональд Трамп
+						</button>
+				</div>
+				<div>
+						<button class="lol2">
+							D) Виктор Цой
+						</button>
+				</div>
+			</div>
+			</div>
+	</div>
+	
+	<div class="block-two">
+		<div class="med">
+   			<h2>
+   					Кто является президентом РС(Я)
+   			</h2>
+		</div>
+		<div class="flex">	
+			<div class="answer">
+				<div>
+					<button class="lol1">
+							A) Айсен Сергеевич
+						</button>
+				</div>
+				<div>
+						<button class="lol3">
+							B) Айсен Николаевич
+						</button>
+				</div>
+			</div>
+			<div class="answer">
+				<div>
+						<button class="lol3">
+							D) Владимир Путин
+						</button>
+				</div>
+				<div>
+						<button class="lol3">
+							C) Николай Соболев
+						</button>
+				</div>
+			</div>
+			</div>
+	</div>
+
+	<div class="block-tree">
+		<div class="med">
+   			<h2>
+   					Кем является Сардаана Авксентьева ?
+   			</h2>
+		</div>
+		<div class="flex">	
+			<div class="answer">
+				<div>
+					<button class="lol4">
+							A) Мэр г.Якутска
+						</button>
+				</div>
+				<div>
+						<button class="lol5">
+							B) Вице-Президент РС(Я)
+						</button>
+				</div>
+			</div>
+			<div class="answer">
+				<div>
+						<button class="lol5">
+							D) Бывший Мэр г.Якутска
+						</button>
+				</div>
+				<div>
+						<button class="lol5">
+							C) Будущий Мэр г.Якутска
+						</button>
+				</div>
+			</div>
+			</div>
+	</div>
+
+	<div class="block-four">
+		<div class="med">
+   			<h2>
+   					Кто Директор IT-Школы Илларинова
+   			</h2>
+		</div>
+		<div class="flex">	
+			<div class="answer">
+				<div>
+					<button class="lol6">
+							A) Алексей Илларионов
+						</button>
+				</div>
+				<div>
+						<button class="lol7">
+							B) Алексей
+						</button>
+				</div>
+			</div>
+			<div class="answer">
+				<div>
+						<button class="lol7">
+							C) Хороший человек
+						</button>
+				</div>
+				<div>
+						<button class="lol7">
+							D) Владимир Путин
+						</button>
+				</div>
+			</div>
+			</div>
+	</div>
+
+	<div class="block-five">
+		<div class="med">
+   			<h2>
+   					Кто я? 
+   			</h2>
+		</div>
+		<div class="flex">	
+			<div class="answer">
+				<div>
+					<button class="lol8">
+							A) Бурый
+						</button>
+				</div>
+				<div>
+						<button class="lol9">
+							B) Кирилл
+						</button>
+				</div>
+			</div>
+			<div class="answer">
+				<div>
+						<button class="lol9">
+							C) Медведь
+						</button>
+				</div>
+				<div>
+						<button class="lol9">
+							D) Человек
+						</button>
+				</div>
+			</div>
+			</div>
+	</div>
+   
+</body>
+<script type="text/javascript">
+	let block1 = document.querySelector('.block-one');
+	let block2 = document.querySelector('.block-two');
+	let block3 = document.querySelector('.block-tree');
+	let block4 = document.querySelector('.block-four');
+	let block5 = document.querySelector('.block-five')
+
+	let errorOne = document.querySelectorAll('.lol2');
+	let rightOne = document.querySelector('.lol')
+	for(i = 0; i < errorOne	.length; i++){
+		errorOne[i].onclick = function(){
+			block1.style.display = 'none';
+			let lose = document.createElement('div');
+			document.body.appendChild(lose)
+			lose.innerHTML = "Игра окончена"
+		}
+		rightOne.onclick = function(){
+			block1.style.display = 'none';
+			block2.style.display = 'block'
+		}
+	}
+
+	let errorTwo = document.querySelectorAll('.lol3');
+	let rightTwo = document.querySelector('.lol1')
+
+	for(i = 0; i < errorTwo.length; i++){
+		errorTwo[i].onclick = function(){
+			block2.style.display = 'none';
+			let lose = document.createElement('div');
+			document.body.appendChild(lose)
+			lose.innerHTML = "Игра окончена"
+		}
+		rightTwo.onclick = function(){
+			block2.style.display = 'none';
+			block3.style.display = 'block'
+		}
+	}
+
+	let errorTree = document.querySelectorAll('.lol5');
+	let rightTree = document.querySelector('.lol4')
+
+	for(i = 0; i < errorTree.length; i++){
+		errorTree[i].onclick = function(){
+			block3.style.display = 'none';
+			let lose = document.createElement('div');
+			document.body.appendChild(lose)
+			lose.innerHTML = "Игра окончена"
+		}
+		rightTree.onclick = function(){
+			block3.style.display = 'none';
+			block4.style.display = 'block'
+		}
+	}
+
+	let errorFour = document.querySelectorAll('.lol7');
+	let rightFour = document.querySelector('.lol6')
+
+for(i = 0; i < errorFour.length; i++){
+		errorFour[i].onclick = function(){
+			block4.style.display = 'none';
+			let lose = document.createElement('div');
+			document.body.appendChild(lose)
+			lose.innerHTML = "Игра окончена"
+		}
+		rightFour.onclick = function(){
+			block4.style.display = 'none';
+			block5.style.display = 'block'
+		}
+	}
+
+	let errorFive = document.querySelectorAll('.lol9');
+	let rightFive = document.querySelector('.lol8')
+
+	for(i = 0; i < errorFive.length; i++){
+		errorFive[i].onclick = function(){
+			block5.style.display = 'none';
+			let lose = document.createElement('div');
+			document.body.appendChild(lose)
+			lose.innerHTML = "Игра окончена"
+		}
+		rightFive.onclick = function(){
+			block5.style.display = 'none';
+			let Win = document.createElement('div');
+			document.body.appendChild(Win)
+			Win.innerHTML = "Вы выйграли"
+		}
+	}
+</script>
+</html>
